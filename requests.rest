@@ -1,0 +1,89 @@
+GET http://localhost:3001/info/
+
+###
+
+GET http://localhost:3001/api/persons/
+
+###
+
+GET http://localhost:3001/api/persons/3
+
+###
+
+GET http://localhost:3001/api/persons/7
+
+###
+
+DELETE http://localhost:3001/api/persons/2
+
+###
+
+DELETE http://localhost:3001/api/persons/7
+
+###
+
+POST http://localhost:3001/api/persons/
+content-type: application/json
+
+{
+    "name": "Ole Penwright",
+    "phone": "(519) 409 5046"
+}
+
+###
+
+POST http://localhost:3001/api/persons/
+content-type: application/json
+
+{
+    "name": "Ole Penwright"
+}
+
+###
+
+POST http://localhost:3001/api/persons/
+content-type: application/json
+
+{
+    "name": "Anne Brownhill",
+    "phone": "(519) 409 5046"
+}
+
+###
+
+PUT http://localhost:3001/api/persons/5
+content-type: application/json
+
+{
+    "name": "Ole Penwright",
+    "phone": "(519) 409 5046"
+}
+
+###
+
+PUT http://localhost:3001/api/persons/3
+content-type: application/json
+
+{
+    "name": "Anne Brownhill"
+}
+
+###
+
+PUT http://localhost:3001/api/persons/8
+content-type: application/json
+
+{
+    "name": "Anne Brownhill",
+    "phone": "(519) 409 5046"
+}
+
+###
+
+PUT http://localhost:3001/api/persons/1
+content-type: application/json
+
+{
+    "name": "Anne Brownhill",
+    "phone": "(519) 409 5046"
+}
